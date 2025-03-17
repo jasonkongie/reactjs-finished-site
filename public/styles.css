@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Permanent+Marker&display=swap');
+
+*   {
+  margin:   0;
+  padding:0;
+  box-sizing:   border-box;
+}
+
+body {
+  background:  #C8E6C9 url('images/vinyl_bg.jpg') repeat;
+  background-size:  200px 200px;
+  background-blend-mode:    soft-light;
+  background-color:   rgba(200, 230, 201, 0.95);
+  color:  #000;
+  line-height:  1.6;
+  font-family:    'Lobster Two', cursive;
+  font-size:   18px;
+  min-height:  100vh;
+  display:   flex;
+  flex-direction:  column;
+}
+
+h1, h2,   h3, h4, h5, h6 {
+  font-family:  'Permanent Marker', cursive;
+  color:   #000;
+}
+
+h1 {   font-size: 2.5rem; }
+h2 {  font-size:  2rem; }
+h3 {   font-size: 1.75rem;  }
+h4 { font-size:  1.5rem;   }
+h5 {  font-size:   1.25rem; }
+h6 {   font-size: 1.1rem;  }
+
+header  {
+  background-color:  #B2DFDB;
+  padding:   1rem;
+  border-bottom:  4px solid rgba(0,0,0,0.1);
+}
+main {
+  background-color:    transparent;
+  padding:  1rem;
+  max-width:   1000px;
+  margin:  0 auto;
+  flex:   1;
+}
+footer  {
+  background-color:   #D7CDE8;
+  text-align:  center;
+  padding:    1rem;
+  margin-top:  auto;
+}
+
+header nav   ul {
+  list-style:  none;
+  display:    flex;
+  gap:  1rem;
+}
+header   nav a {
+  color:   #000;
+  text-decoration:  none;
+  padding:    0.5rem;
+  border-radius:  4px;
+  transition:   background-color 0.3s ease;
+  font-size:  1.5rem;
+}
+header nav  a:hover {
+  background-color:    rgba(0,0,0,0.1);
+}
+
+#contactSidebar   {
+  display:  none !important;
+}
+
+button  {
+  background-color:    #D7CDE8;
+  color:  #000;
+  border:   none;
+  padding:    0.5rem 1rem;
+  cursor:  pointer;
+  border-radius:   0;
+  font-family:  'Permanent Marker', cursive;
+  font-size:   1.2rem;
+  transition:    all 0.3s ease;
+  margin-right:  0.5rem;
+}
+button:hover   {
+  background-color:  #9575CD;
+  color:    white;
+  transform:   scale(1.05);
+  box-shadow:  0 4px 8px rgba(0,0,0,0.2);
+}
+
+custom-box  {
+  display:   block;
+  background-color:  rgba(0,0,0,0.1);
+  padding:    1rem;
+  margin:   1rem 0;
+  border-radius:  4px;
+}
+
+blog-card,
+research-card   {
+  margin:  1rem;
+}
+
+table   {
+  width:  100%;
+  border-collapse:   collapse;
+  margin-bottom:    1rem;
+  font-size:  1.1rem;
+}
+table,   th, td {
+  border:  1px solid #999;
+}
+th,   td {
+  padding:  0.5rem;
+}
+pre  {
+  background-color:   #eee;
+  padding:    1rem;
+  border-radius:  4px;
+  overflow:   auto;
+  font-size:  1.1rem;
+}
+
+main   figure {
+  float:  left;
+  margin:    0 2rem 1rem 0;
+  width:  350px;
+}
+
+main figure   img {
+  width:   100%;
+  height:  auto;
+  border-radius:    8px;
+  box-shadow:  0 4px 8px rgba(0,0,0,0.2);
+}
+
+main   figure figcaption {
+  text-align:    center;
+  margin-top:  0.5rem;
+  font-style:   italic;
+}
+
+
+#crudForm {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+#crudForm label {
+  font-weight: bold;
+}
+
+#crudForm input, 
+#crudForm textarea {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+#crudForm textarea {
+  min-height: 100px;
+}
+
+#crudForm button {
+  padding: 0.5rem 1rem;
+  background-color: #673AB7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#crudForm button:hover:not(:disabled) {
+  background-color: #5E35B1;
+}
+
+#crudForm button:disabled {
+  background-color: #B39DDB;
+  cursor: not-allowed;
+}
+
+#crudForm button {
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+#btnReadAll {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+#btnReadAll:hover {
+  background-color: #388E3C;
+}
+
+.notification {
+  background-color: #FFF9C4;
+  padding: 1rem;
+  border-left: 4px solid #FBC02D;
+  margin-bottom: 1.5rem;
+}
+
+#contactFormSection form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+#contactFormSection fieldset {
+  grid-column: 1 / -1;
+  border: none;
+  padding: 0;
+}
+
+#contactFormSection legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#contactFormSection label {
+  font-weight: bold;
+}
+
+#contactFormSection input,
+#contactFormSection textarea {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#contactFormSection textarea {
+  min-height: 100px;
+}
+
+#contactFormSection button {
+  padding: 0.5rem 1rem;
+  background-color: #673AB7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  grid-column: 1 / -1;
+  width: 200px;
+  justify-self: start;
+}
+
+#contactFormSection button:hover {
+  background-color: #5E35B1;
+}
